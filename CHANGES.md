@@ -13,6 +13,7 @@
 ### :bug: Bugs fixed
 
 - Harden Nginx responses with standard security headers and hide upstream `X-Powered-By` headers
+- Fix plugin API schema validation rendering `"Field message is invalid:"` (with the real field and reason dropped) when `interpret-schema-problem` produced a nested error map — e.g. `tokens.addTheme({sets: ["Not Existing Set"]})` [Github #9417](https://github.com/penpot/penpot/issues/9417)
 
 ## 2.16.0 (Unreleased)
 
